@@ -76,7 +76,7 @@ h1 {
   height: 4rem;
 }
 
-.card__bottom img {
+.card__bottom .photoid {
   margin-left: 2.1rem;
   height: 2.4rem;
   width: 2.4rem;
@@ -112,12 +112,46 @@ button .arrow {
   width: 0.8rem;
 }
 
-.black__mode button {
-  background: #48556a;
-}
-
 .invisible {
   display: none;
+}
+
+.dark {
+  bottom: 1rem;
+  background: #6d7f97;
+}
+
+.dark path {
+  fill: #ecf2f8;
+}
+
+.share {
+  height: 4rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #48556a;
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  bottom: 0rem;
+  left: 0;
+}
+
+.share p {
+  color: #9eafc2;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-left: 2.1rem;
+}
+
+.share .reseaux img {
+  margin-left: 1rem;
+  height: 20px;
+  width: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -144,6 +178,25 @@ button .arrow {
   }
   button {
     right: 2.5rem;
+  }
+  .share {
+    border-radius: 15px;
+    width: 15.62rem;
+    bottom: 6rem;
+    left: 16.5rem;
+  }
+  .share::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 1.25rem solid #48556a;
+    border-right: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    bottom: -1rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
