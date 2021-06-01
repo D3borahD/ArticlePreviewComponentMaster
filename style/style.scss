@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+//## Colors
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+$DesaturatedDarkBlue: hsl(214, 17%, 51%);
+$GrayishBlue: hsl(212, 23%, 69%);
+$LightGrayishBlue: hsl(210, 46%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  background: $LightGrayishBlue;
+  color: $VeryDarkGrayishBlue;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+.name {
+  font-weight: 600;
+}
+h1 {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+.card {
+  width: 86.66%;
+  max-width: 45.75rem;
+
+  margin: auto;
+}
+.card__illustration {
+  width: 100%;
+  height: 13.5rem;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+#illustration {
+  width: 100%;
+}
+
+.card__content {
+  background: white;
+  border-radius: 0 0 15px 15px;
+  padding: 3rem 2.1rem 1.25rem 2.1rem;
+}
+
+.content {
+  margin-bottom: 1.8rem;
+  color: $DesaturatedDarkBlue;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  img {
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+  }
+}
+.card__bottom--identity {
+  margin-left: -3rem;
+}
+button {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+#arrow {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.share {
+  display: none;
+}
+.date {
+  font-weight: 500;
+  color: $DesaturatedDarkBlue;
+}
+
+@media screen and(min-width: 1200px) {
+  .card {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-height: 18.25rem;
+  }
+  .card__content {
+    border-radius: 0 15px 15px 0;
+  }
+  .card__illustration {
+    width: 290px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+  #illustration {
+    width: 21.875rem;
+    height: 100%;
+  }
+  .card__content {
+    width: 27.5rem;
+    padding: 2.25rem 2.31rem;
+  }
+  h1,
+  .content {
+    padding-right: 1.2rem;
+  }
+  .card__bottom {
+    align-items: flex-end;
+  }
+  .card__bottom--identity {
+    margin-left: -10rem;
+  }
+}
+
+//Feel free to remove these styles or customise in your own stylesheet 👍
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
