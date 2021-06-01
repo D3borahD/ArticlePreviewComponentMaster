@@ -16,46 +16,72 @@
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
+    <!-- 
+
+   -->
     <div class="card">
+      <!-- ILLUSTRATION-->
       <div class="card__illustration">
         <img id="illustration" src="images/drawers.jpg" alt="illustration" />
       </div>
+      <!-- BODY -->
       <div class="card__content">
-        <h1>
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h1>
-
-        <p class="content">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </p>
-
+        <div class="card__body">
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="content">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <!-- BOTTOM -->
         <div class="card__bottom">
-          <img src="images/avatar-michelle.jpg" alt="photo Michelle" />
+          <img
+            class="photoid"
+            src="images/avatar-michelle.jpg"
+            alt="photo Michelle"
+          />
           <div class="card__bottom--identity">
             <p class="name">Michelle Appleton</p>
             <p class="date">28 Jun 2020</p>
           </div>
           <button>
-            <img id="arrow" src="images/icon-share.svg" alt="button share" />
+            <img class="arrow" src="images/icon-share.svg" alt="button share" />
           </button>
-          <div class="share">
-            <p>Share</p>
-            <img src="images/icon-facebook.svg" alt="logo facebook" />
-            <img src="images/icon-twitter.svg" alt="logo twitter" />
-            <img src="images/icon-pinterest.svg" alt="logo pinterest" />
+          <div class="invisible">
+            <div class="share">
+              <p>Share</p>
+              <div class="reseaux">
+                <img src="images/icon-facebook.svg" alt="logo facebook" />
+                <img src="images/icon-twitter.svg" alt="logo twitter" />
+                <img src="images/icon-pinterest.svg" alt="logo pinterest" />
+              </div>
+              <button>
+                <img
+                  class="arrow black__mode"
+                  src="images/icon-share.svg"
+                  alt="button share"
+                />
+              </button>
+            </div>
           </div>
         </div>
+        <!-- card -->
       </div>
     </div>
-
+    <!-- FOOTER -->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/D3borahD">D3borahD</a>.
     </div>
+    <!-- 
+
+     -->
+    <script src="index.js"></script>
   </body>
 </html>

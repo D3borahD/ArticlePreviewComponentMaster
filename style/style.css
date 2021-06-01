@@ -27,20 +27,11 @@ body {
           flex-direction: column;
 }
 
-h1,
-.name {
-  font-weight: 600;
-}
-
-h1 {
-  font-size: 1rem;
-  margin-bottom: 1.25rem;
-}
-
 .card {
   width: 86.66%;
   max-width: 45.75rem;
   margin: auto;
+  position: relative;
 }
 
 .card__illustration {
@@ -57,69 +48,87 @@ h1 {
 .card__content {
   background: white;
   border-radius: 0 0 15px 15px;
-  padding: 3rem 2.1rem 1.25rem 2.1rem;
 }
 
-.content {
-  margin-bottom: 1.8rem;
+.card__body {
+  padding: 2.5rem 2.1rem 1.75rem 2.1rem;
+}
+
+.card__body P {
   color: #6d7f97;
 }
 
+h1,
+.name {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
 .card__bottom {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 4rem;
 }
 
 .card__bottom img {
+  margin-left: 2.1rem;
   height: 2.4rem;
   width: 2.4rem;
   border-radius: 50%;
 }
 
 .card__bottom--identity {
-  margin-left: -3rem;
+  margin-left: 1rem;
+}
+
+.date {
+  color: #6d7f97;
 }
 
 button {
+  position: absolute;
   width: 1.9rem;
   height: 1.9rem;
   border-radius: 50%;
   outline: none;
   border: none;
+  right: 2rem;
+  bottom: 1.5rem;
 }
 
-#arrow {
-  width: 0.8rem;
+button .arrow {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   height: 0.8rem;
+  width: 0.8rem;
 }
 
-.share {
+.black__mode button {
+  background: #48556a;
+}
+
+.invisible {
   display: none;
-}
-
-.date {
-  font-weight: 500;
-  color: #6d7f97;
 }
 
 @media screen and (min-width: 1200px) {
   .card {
-    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    max-height: 18.25rem;
   }
   .card__content {
     border-radius: 0 15px 15px 0;
+    width: 27.5rem;
   }
   .card__illustration {
     width: 290px;
@@ -130,21 +139,11 @@ button {
     width: 21.875rem;
     height: 100%;
   }
-  .card__content {
-    width: 27.5rem;
-    padding: 2.25rem 2.31rem;
+  .card__body {
+    padding: 2.25rem 3.65rem 2rem 2.5rem;
   }
-  h1,
-  .content {
-    padding-right: 1.2rem;
-  }
-  .card__bottom {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .card__bottom--identity {
-    margin-left: -10rem;
+  button {
+    right: 2.5rem;
   }
 }
 
